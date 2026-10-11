@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">Portfolio</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Birhan Assefa</h1>
+      <h2 class="hero-title typed" id="typed"></h2>
+      <p class="hero-bio">
+        A passionate developer who loves building clean, modern web experiences.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Hire Me</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="avatar-ring">
+        <div class="avatar-placeholder">
+          <i class="fas fa-user"></i>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a Computer Engineer with a passion for creating elegant solutions
+            to complex problems. I specialize in modern web technologies and enjoy
+            turning ideas into reality through clean, efficient code and also Network END Engineer 
+            with detail implementation and design.
+          </p>
+          <p>
+            When I'm not coding, you'll find me exploring new technologies,
+            contributing to open-source projects, or enjoying the outdoors.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Bahir Dar, Ethiopia</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>Birhanassefa2127@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Bahir Dar University</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="25">0</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="15">0</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="10">0</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 class="section-title">My <span>Skills</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Frontend</h3>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-info"><span>HTML / CSS</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>JavaScript</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>React</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-server"></i> Backend</h3>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-info"><span>Node.js</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Python</span><span>65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>SQL</span><span>60%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools</h3>
+          <div class="tools-tags">
+            <span class="tag">Git</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Docker</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Postman</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section-title">My <span>Projects</span></h2>
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="app">App</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce Website</h3>
+            <p>A fully responsive e-commerce platform built with React and Node.js.</p>
+            <div class="project-tags">
+              <span>React</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" aria-label="View Live"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="#" aria-label="View Code"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="app">
+          <div class="project-img">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <div class="project-info">
+            <h3>Task Manager App</h3>
+            <p>A productivity app with real-time sync and drag-and-drop functionality.</p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>Firebase</span><span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" aria-label="View Live"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="#" aria-label="View Code"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="design">
+          <div class="project-img">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <div class="project-info">
+            <h3>UI Design System</h3>
+            <p>A comprehensive design system with reusable components and style guide.</p>
+            <div class="project-tags">
+              <span>Figma</span><span>CSS</span><span>Design</span>
+            </div>
+            <div class="project-links">
+              <a href="#" aria-label="View Live"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="#" aria-label="View Code"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="project-info">
+            <h3>Analytics Dashboard</h3>
+            <p>A data visualization dashboard with interactive charts and filters.</p>
+            <div class="project-tags">
+              <span>React</span><span>D3.js</span><span>API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" aria-label="View Live"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="#" aria-label="View Code"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h3>Let's Work Together</h3>
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+          <div class="contact-links">
+            <a href="mailto:your@email.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              <span>birhanassefa2127@gmail.com</span>
+            </a>
+            <a href="tel:+1234567890" class="contact-link">
+              <i class="fas fa-phone"></i>
+              <span>+251 914 023 246 </span>
+            </a>
+            <a href="#" class="contact-link">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Bahir Dar, Ethiopia</span>
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required />
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Subject" required />
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <p>Designed &amp; Built by <span>Birhan</span> &copy; 2026</p>
+    <a href="#hero" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
