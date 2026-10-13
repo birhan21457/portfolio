@@ -203,11 +203,11 @@ fadeUpStyle.textContent = `
 document.head.appendChild(fadeUpStyle);
 
 
-/* ── 8. CONTACT FORM ────────────────────────────────────────── */
+/* ── 8. CONTACT FORM – Formspree ────────────────────────────── */
 const form       = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   const name    = form.name.value.trim();
@@ -215,7 +215,7 @@ form.addEventListener('submit', (e) => {
   const subject = form.subject.value.trim();
   const message = form.message.value.trim();
 
-  // Basic validation
+  // Basic client-side validation
   if (!name || !email || !subject || !message) {
     setStatus('Please fill in all fields.', 'error');
     return;
@@ -225,17 +225,32 @@ form.addEventListener('submit', (e) => {
     return;
   }
 
-  // Simulate sending (replace with a real API call / EmailJS / etc.)
   const submitBtn = form.querySelector('[type="submit"]');
   submitBtn.disabled = true;
   submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
 
-  setTimeout(() => {
-    setStatus('Message sent! I\'ll get back to you soon. 🚀', 'success');
-    form.reset();
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' },
+    });
+
+    if (response.ok) {
+      setStatus('Message sent! I\'ll get back to you soon. 🚀', 'success');
+      form.reset();
+    } else {
+      const data = await response.json();
+      const errMsg = data?.errors?.map(e => e.message).join(', ')
+                     || 'Something went wrong. Please try again.';
+      setStatus(errMsg, 'error');
+    }
+  } catch {
+    setStatus('Network error. Check your connection and try again.', 'error');
+  } finally {
     submitBtn.disabled = false;
     submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-  }, 1800);
+  }
 });
 
 function setStatus(msg, type) {
@@ -244,7 +259,7 @@ function setStatus(msg, type) {
   setTimeout(() => {
     formStatus.textContent = '';
     formStatus.className   = 'form-status';
-  }, 5000);
+  }, 6000);
 }
 
 

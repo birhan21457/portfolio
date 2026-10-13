@@ -18,6 +18,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -42,7 +43,7 @@
     <div class="hero-image">
       <div class="avatar-ring">
         <div class="avatar-placeholder">
-          <i class="fas fa-user"></i>
+          <img src="imge/profile.png" alt="Profile Picture" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
         </div>
       </div>
     </div>
@@ -56,53 +57,81 @@
     <div class="container">
       <h2 class="section-title">About <span>Me</span></h2>
       <div class="about-grid">
-        <div class="about-text">
-          <p>
-            I'm a Computer Engineer with a passion for creating elegant solutions
-            to complex problems. I specialize in modern web technologies and enjoy
-            turning ideas into reality through clean, efficient code and also Network END Engineer 
-            with detail implementation and design.
-          </p>
-          <p>
-            When I'm not coding, you'll find me exploring new technologies,
-            contributing to open-source projects, or enjoying the outdoors.
-          </p>
-          <div class="about-info">
-            <div class="info-item">
+
+        <!-- LEFT: photo + quick-info cards -->
+        <div class="about-left">
+          <div class="about-photo">
+            <img src="imge/profile.png" alt="Birhan Assefa" />
+          </div>
+          <div class="about-quick-info">
+            <div class="quick-info-item">
               <i class="fas fa-map-marker-alt"></i>
               <span>Bahir Dar, Ethiopia</span>
             </div>
-            <div class="info-item">
-              <i class="fas fa-envelope"></i>
-              <span>Birhanassefa2127@gmail.com</span>
-            </div>
-            <div class="info-item">
+            <div class="quick-info-item">
               <i class="fas fa-graduation-cap"></i>
+              <span>Computer Engineering Student</span>
+            </div>
+            <div class="quick-info-item">
+              <i class="fas fa-university"></i>
               <span>Bahir Dar University</span>
             </div>
-          </div>
-          <a href="#" class="btn btn-primary" download>
-            <i class="fas fa-download"></i> Download CV
-          </a>
-        </div>
-        <div class="about-stats">
-          <div class="stat-card">
-            <span class="stat-number" data-target="3">0</span>
-            <span class="stat-label">Years Experience</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number" data-target="25">0</span>
-            <span class="stat-label">Projects Completed</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number" data-target="15">0</span>
-            <span class="stat-label">Happy Clients</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number" data-target="10">0</span>
-            <span class="stat-label">Technologies</span>
+            <div class="quick-info-item">
+              <i class="fas fa-code"></i>
+              <span>Web Developer &amp; Network END Engineer</span>
+            </div>
+            <div class="quick-info-item">
+              <i class="fas fa-language"></i>
+              <span>English · Amharic . Geez</span>
+            </div>
           </div>
         </div>
+
+        <!-- RIGHT: bio + highlights + button -->
+        <div class="about-right">
+          <h3 class="about-role">Computer Engineering Student &amp; Web Developer</h3>
+
+          <p class="about-bio">
+            I'm <strong>Birhan Assefa</strong>, a Computer Engineering student at
+            <strong>Bahir Dar University</strong>, Ethiopia. I'm passionate about
+            technology and innovation, with a strong interest in software development,
+            web technologies, Network Engineer.
+          </p>
+          <p class="about-bio">
+            Throughout my academic journey I've been developing my skills in
+            programming, problem-solving, and creating practical solutions. I enjoy
+            learning new technologies and applying them to build meaningful projects
+            that make a difference.
+          </p>
+
+          <p class="about-highlights-title"><strong>Key Highlights:</strong></p>
+          <ul class="about-highlights">
+            <li>
+              <i class="fas fa-check-circle"></i>
+              Computer Engineering student at Bahir Dar University
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              Full stack web developer (HTML, CSS, JS, React, Node, Java, PHP)
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              Network Engineer(Cisco,Visio).
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              Active on GitHub: <a href="https://github.com/birhan21457" target="_blank" rel="noopener">birhan21457</a>
+            </li>
+          </ul>
+
+          <p class="about-bio">
+          Beyond writing code and designing network architectures, I enjoy exploring new tech domains, collaborating on open-source initiatives, 
+          and helping fellow students master software development and networking concepts.
+          </p>
+
+          <a href="#contact" class="btn btn-primary about-cta">Let's Connect</a>
+        </div>
+
       </div>
     </div>
   </section>
@@ -155,9 +184,9 @@
             <span class="tag">Git</span>
             <span class="tag">VS Code</span>
             <span class="tag">Figma</span>
-            <span class="tag">Docker</span>
             <span class="tag">GitHub</span>
-            <span class="tag">Postman</span>
+            <span class="tag">Cisco</span>
+            <span class="tag">MS Visio</span>
           </div>
         </div>
 
@@ -245,6 +274,124 @@
           </div>
         </div>
 
+        <div class="project-card" data-category="web">
+          <div class="project-img project-img-photo">
+            <img src="imge/Net.jpg" alt="Healthcare Network Design" />
+          </div>
+          <div class="project-info">
+            <h3>Design &amp; Implementation of Healthcare Networks</h3>
+            <p>Designed and implemented a secure, scalable network infrastructure for a healthcare facility, covering topology, IP addressing, VLANs, and data security protocols.</p>
+            <div class="project-tags">
+              <span>Networking</span><span>VLAN</span><span>Cisco</span><span>Security</span>
+            </div>
+            <div class="project-links">
+              <a href="#" aria-label="View Live"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="#" aria-label="View Code"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <h2 class="section-title">My <span>Experience</span></h2>
+      <div class="experience-timeline">
+
+        <!-- Work Experience -->
+        <div class="exp-group-label">Work Experience</div>
+
+        <div class="exp-card">
+          <div class="exp-icon"><i class="fas fa-network-wired"></i></div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">Network Engineer Intern</h3>
+                <p class="exp-org">IE Network Solutions</p>
+              </div>
+              <span class="exp-badge exp-badge-work">Work</span>
+            </div>
+            <p class="exp-desc">
+              Assisted in the design, configuration, and deployment of enterprise network
+              infrastructure. Worked with routers, switches, and firewalls; conducted
+              network troubleshooting and supported VLAN segmentation and IP addressing
+              for client sites.
+            </p>
+            <div class="exp-tags">
+              <span>Cisco</span><span>VLAN</span><span>Routing</span><span>Switching</span><span>Troubleshooting</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-icon"><i class="fas fa-university"></i></div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">Student Management System Developer</h3>
+                <p class="exp-org">Bahir Dar University</p>
+              </div>
+              <span class="exp-badge exp-badge-work">Work</span>
+            </div>
+            <p class="exp-desc">
+              Developed and maintained modules for a student management system used at
+              Bahir Dar University. Implemented features for student records, course
+              registration, and grade management using web technologies.
+            </p>
+            <div class="exp-tags">
+              <span>Web Dev</span><span>Database</span><span>PHP</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leadership & Teaching -->
+        <div class="exp-group-label">Leadership &amp; Teaching</div>
+
+        <div class="exp-card">
+          <div class="exp-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">Online Education Instructor</h3>
+                <p class="exp-org">Abushakir </p>
+              </div>
+              <span class="exp-badge exp-badge-lead">Leadership</span>
+            </div>
+            <p class="exp-desc">
+              Led and instructed online courses on the Abushakir  Organized course content, conducted
+              live sessions, and provided learning support to enrolled students.
+            </p>
+            <div class="exp-tags">
+              <span>Teaching</span><span>Mentoring</span><span>Online Education</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-icon"><i class="fas fa-book-open"></i></div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">Bahire-Hasab &amp; Qene Course </h3>
+                <p class="exp-org">Cultural &amp; Traditional Education</p>
+              </div>
+              <span class="exp-badge exp-badge-lead">Leadership</span>
+            </div>
+            <p class="exp-desc">
+              Taught and guided students in traditional Ethiopian scholarly disciplines
+              — Bahire-Hasab (Ethiopian calendar &amp; astronomy) and Qene (classical
+              Ge'ez poetry). Demonstrated strong leadership in preserving and passing
+              on cultural knowledge alongside modern skills.
+            </p>
+            <div class="exp-tags">
+              <span>Bahire-Hasab</span><span>Qene</span><span>Cultural Education</span><span>Leadership</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -259,42 +406,84 @@
           <h3>Let's Work Together</h3>
           <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
           <div class="contact-links">
-            <a href="mailto:your@email.com" class="contact-link">
-              <i class="fas fa-envelope"></i>
-              <span>birhanassefa2127@gmail.com</span>
+
+            <a href="mailto:birhanassefa2127@gmail.com" class="contact-link">
+              <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">EMAIL</span>
+                <span class="contact-link-value">birhanassefa2127@gmail.com</span>
+              </div>
             </a>
-            <a href="tel:+1234567890" class="contact-link">
-              <i class="fas fa-phone"></i>
-              <span>+251 914 023 246 </span>
+
+            <a href="mailto:birshze19@gmail.com" class="contact-link">
+              <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">ANOTHER EMAIL</span>
+                <span class="contact-link-value">birshze19@gmail.com</span>
+              </div>
             </a>
+
+            <a href="tel:+251914023246" class="contact-link">
+              <div class="contact-link-icon"><i class="fas fa-phone"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">PHONE NUMBER</span>
+                <span class="contact-link-value">+251 914 023 246</span>
+              </div>
+            </a>
+
+            <a href="tel:+251711992127" class="contact-link">
+              <div class="contact-link-icon"><i class="fas fa-mobile-alt"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">PHONE 2</span>
+                <span class="contact-link-value">+251 711 992 127</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/birhan21457" target="_blank" rel="noopener" class="contact-link">
+              <div class="contact-link-icon"><i class="fab fa-github"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">GITHUB</span>
+                <span class="contact-link-value">https://github.com/birhan21457</span>
+              </div>
+            </a>
+
+            <a href="https://t.me/B1rhan27" target="_blank" rel="noopener" class="contact-link">
+              <div class="contact-link-icon"><i class="fab fa-telegram-plane"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">TELEGRAM</span>
+                <span class="contact-link-value">@B1rhan27</span>
+              </div>
+            </a>
+
             <a href="#" class="contact-link">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Bahir Dar, Ethiopia</span>
+              <div class="contact-link-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">LOCATION</span>
+                <span class="contact-link-value">Bahir Dar, Ethiopia</span>
+              </div>
             </a>
-          </div>
-          <div class="social-links">
-            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm" novalidate>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xnpjzyjo" method="POST" novalidate>
+          <!-- Formspree will forward replies to your email -->
+          <input type="hidden" name="_subject" value="New message from Portfolio" />
+
           <div class="form-group">
-            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
             <label for="name">Your Name</label>
           </div>
           <div class="form-group">
-            <input type="email" id="email" placeholder="Your Email" required />
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
             <label for="email">Your Email</label>
           </div>
           <div class="form-group">
-            <input type="text" id="subject" placeholder="Subject" required />
+            <input type="text" id="subject" name="subject" placeholder="Subject" required />
             <label for="subject">Subject</label>
           </div>
           <div class="form-group">
-            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
             <label for="message">Your Message</label>
           </div>
           <button type="submit" class="btn btn-primary btn-full">
@@ -309,7 +498,20 @@
 
   <!-- ── FOOTER ── -->
   <footer class="footer">
-    <p>Designed &amp; Built by <span>Birhan</span> &copy; 2026</p>
+    <div class="footer-top">
+      <h2 class="footer-name">Birhan <span>Assefa</span></h2>
+      <p class="footer-tagline">Building digital experiences, one line of code at a time.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/birhan21457" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:birhanassefa2127@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://t.me/B1rhan27" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Birhan Assefa. All rights reserved.</p>
+      <p>Designed &amp; Built by <span>Birhan Assefa</span></p>
+    </div>
     <a href="#hero" class="back-to-top" aria-label="Back to top">
       <i class="fas fa-chevron-up"></i>
     </a>
