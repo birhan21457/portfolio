@@ -1,0 +1,92 @@
+.experience { background: var(--dark-2); }
+
+.experience-timeline { display: flex; flex-direction: column; gap: 1rem; }
+
+.exp-group-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+  border-left: 3px solid var(--cyan);
+}
+
+.exp-card {
+  display: flex;
+  gap: 1.2rem;
+  background: var(--dark-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+.exp-card:hover {
+  border-color: var(--cyan);
+  box-shadow: var(--shadow);
+  transform: translateX(4px);
+}
+
+.exp-icon {
+  width: 44px; height: 44px;
+  background: rgba(0,229,255,0.1);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cyan);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+  transition: var(--transition);
+}
+.exp-card:hover .exp-icon { background: var(--cyan); color: var(--dark); border-color: var(--cyan); }
+
+.exp-body { flex: 1; }
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+}
+.exp-title { font-size: 1rem; font-weight: 600; color: var(--white); margin-bottom: 0.15rem; }
+.exp-org   { font-size: 0.85rem; color: var(--cyan); font-weight: 500; }
+
+.exp-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+.exp-badge-work {
+  background: rgba(0,229,255,0.12);
+  color: var(--cyan);
+  border: 1px solid rgba(0,229,255,0.3);
+}
+.exp-badge-lead {
+  background: rgba(255,183,77,0.12);
+  color: #ffb74d;
+  border: 1px solid rgba(255,183,77,0.3);
+}
+
+.exp-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 0.9rem;
+}
+.exp-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.exp-tags span {
+  background: rgba(0,229,255,0.08);
+  color: var(--text-light);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.78rem;
+}
