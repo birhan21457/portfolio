@@ -2,7 +2,7 @@ import './Footer.css';
 
 const socials = [
   { href: 'https://github.com/birhan21457', icon: 'fab fa-github',         label: 'GitHub' },
-  { href: 'www.linkedin.com/in/birhan19',  icon: 'fab fa-linkedin-in',    label: 'LinkedIn' },
+  { href: 'https://www.linkedin.com/in/birhan19',  icon: 'fab fa-linkedin-in',    label: 'LinkedIn' },
   { href: 'mailto:birhanassefa2127@gmail.com', icon: 'fas fa-envelope',   label: 'Email' },
   { href: 'https://t.me/B1rhan27',          icon: 'fab fa-telegram-plane', label: 'Telegram' },
 ];
