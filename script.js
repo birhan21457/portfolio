@@ -46,10 +46,10 @@ navMenu.querySelectorAll('a').forEach(link => {
 /* ── 3. TYPED TEXT EFFECT ───────────────────────────────────── */
 const typedEl = document.getElementById('typed');
 const phrases = [
-  'Full-Stack Developer',
-  'UI/UX Enthusiast',
-  'Open-Source Contributor',
-  'Problem Solver',
+  'Computer Engineering Student',
+  'Full-Stack Web Developer',
+  'Network Engineer',
+
 ];
 let phraseIndex = 0;
 let charIndex   = 0;
